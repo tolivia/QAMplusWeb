@@ -1,0 +1,35 @@
+/**	Textos **/
+@texto-azul: rgb(44, 156, 211);
+@texto-verde: rgb(18, 203, 53);
+
+/** Fondos **/
+//@bg-navbar: rgba(55, 139, 182, 0.3);
+@bg-navbar: rgba(14, 78, 111, 0.3);
+@bg-cols: @texto-azul;
+@bg-negro: rgba(0,0,0,0.4);
+@opacidad: 0.7;
+
+@input-border-focus: @texto-verde;
+
+.form-control {
+	background: none;
+	margin-bottom: 10px;
+	border-color: @texto-azul;
+	resize: none;
+
+	&::-webkit-input-placeholder {
+		color: #666;
+	}
+
+	&:-moz-placeholder { /* Firefox 18- */
+		color: #666;  
+	}
+
+	&::-moz-placeholder {  /* Firefox 19+ */
+		color: #666;  
+	}
+
+	&:-ms-input-placeholder {  
+		color: #666;  
+	}
+}

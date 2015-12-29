@@ -1,0 +1,96 @@
+#prices {
+	position: relative;
+	overflow: hidden;
+	height: 950px;
+	padding-top: 150px;
+	padding-bottom: 10px;
+	color: #FFF;
+
+	& > .bg {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image:url("../images/price_top.jpg"); 
+		height: 100%; 
+		width: 100%; 
+		position:fixed;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+
+	.free > .col {
+		background-color: rgba(8, 107, 53, 0.8);
+	}
+
+	.small > .col {
+		background-color: rgba(0, 97, 155, 0.8);
+	}
+
+	.medium > .col {
+		background-color: rgba(0, 81, 155, 0.8);
+	}
+
+	.large > .col {
+		background-color: rgba(0, 51, 126, 0.8);
+	}
+
+	.custom > .col {
+		background-color: rgba(0, 18, 225, 0.8);
+	}
+
+	.icon {
+		width: 35%;
+		margin: auto;
+	
+		img {
+			display: block;
+		}
+
+		span {
+			display: block;
+			font-size: 13px;
+			border-bottom: solid 1px #FFF;
+		}
+	}
+
+	ul
+	{
+		min-height: 140px;
+		margin-top: 20px;
+
+		li {
+			text-align: center;
+			padding: 5px 0;
+
+			&.full-h {
+				padding: 25px 15px;
+				line-height: 30px;
+			}
+		}
+	}
+}
+
+.rows-features {
+	padding: 35px 0; 
+	background-repeat: no-repeat;
+	background-position: center center;	
+	background-size: cover;
+	
+	&#automation {
+		background-image: url("../images/automate.jpg");
+	}
+
+	&#satisfaction {
+		background-color: #e6e6e6;
+	}
+
+	&#market {
+		background-image: url("../images/market.jpg");
+	}
+
+	@media (max-width: @screen-sm-min) {
+		.vertical-align {
+			padding-top: 0;
+		} 
+	}
+}
